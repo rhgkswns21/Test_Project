@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var TestBT: UIButton!
     @IBAction func TestBTPush(_ sender: Any) {
         print("TestBT Click...")
-        print("TestPrint...")
+//        print("TestPrint...")
     }
     
     override func viewDidLoad() {
