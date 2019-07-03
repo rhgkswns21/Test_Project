@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var TestBT: UIButton!
+    @IBAction func TestBTPush(_ sender: Any) {
+        print("TestBT Click...")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        TestBT.backgroundColor = UIColor.red
     }
 
 
