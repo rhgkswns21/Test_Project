@@ -22,10 +22,18 @@ class ViewController: UIViewController {
         
         self.TestBT.center = CGPoint(x: Xcenter/2, y: Ycenter/2)
         self.TestBT.backgroundColor = UIColor.red
+        self.TestBT.isHighlighted = true
+        self.TestBT.addTarget(self, action: #selector(ViewController.testAction(_:)), for: .touchDown)
         self.view.addSubview(TestBT)
         
         print("view", view.sizeThatFits(CGSize.init()).width)
+        
     }
+    
+    @objc func testAction(_ sender:UIButton!){
+        print("Test")
+    }
+    
 
 
 }
